@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="design.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    
+
+
+
+
+     <!-- HTML Code for Side Bar   -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="C:\Users\Admin\OneDrive\Desktop\Simple_Weather_Dashboad\Images\logo1.png">
+        </div>
+        <nav>
+            <a href="#dashboard" id="dashboard" class="nav-link active">Dashboard</a>
+            <a href="#tables"  id="table" class="nav-link">Tables</a>
+        </nav>
+    </div>
+
+
+     <!-- HTML Code for profile picture  -->
+    <img src="C:\Users\Admin\OneDrive\Desktop\Simple_Weather_Dashboad\Images\picture.jpg" alt="profile" class="profile_picture">
+     
+
+
+  <!-- HTML Code for loader spinner -->
+    <div id="spinner">
+        <div class="loader"></div>
+    </div>
+
+
+
+      <!-- HTML Code for the to get the city name  -->
+    <div class="center_content">
+        <div id="weather-details">
+        <h1>Weather Details</h1>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="getWeatherBtn">Get Weather</button>
+
+
+
+          <!-- HTML Code for the section where the 3 type of charts (line,bar and doughnut chart) will display -->
+        <div id="weather-widget"></div>
+        <div class="charts_section">
+        <canvas id="temperature-bar-chart" width="250px" height="250px"></canvas>
+        <canvas id="weather-doughnut-c" width="40px" height="400px"></canvas>
+        <canvas id="temperature-line-c" ></canvas>
+    </div>
+    </div>
+
+
+
+      <!-- HTML Code for the container where the weather details display -->
+    <div class="for_forcast_chatbox_container" style="display: none; display: flex; justify-content: space-around;">
+        <div id="forecast-container" style="display: none;" >
+            <h2> FORECAST TABLE</h2>
+            <table id="forecast-table"></table>
+        </div>
+
+
+
+          <!-- HTML Code for the container of  chatbox  -->
+        <div id="chatbox-container" style="display: none;"  >
+            
+            <h3> CHATBOX..</h3>
+            <input type="text" id="question" placeholder="Ask Me about Weather....">
+            <button id="Sendbutton">Enter</button>
+            
+            <div id="Answer"></div>
+            
+              <button id="removebutton">Delete</button>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+ <!-- javascript files  -->
+
+<script src="design.js"></script>
+<script src="chart.js"></script>
+<script src="Chatbox.js"></script>
+
+
+
+
+
+</body>
+</html>

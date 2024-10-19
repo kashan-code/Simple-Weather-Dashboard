@@ -1,0 +1,261 @@
+body {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+
+
+.sidebar {
+    width: 250px;
+    background-color: rgb(17, 39, 58);
+    color: white;
+    height: 140vh;
+    position: fixed;
+    padding: 10px;
+    transition: width 0.3s ease;
+    justify-content: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+
+img {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.sidebar nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 2px solid rgb(7, 10, 12);
+    margin-top: 10px;
+    width: 150px;
+    margin-left: 25px;
+}
+
+
+
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background-color: rgb(17, 39, 58);
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 3px solid rgb(6, 10, 12);
+}
+
+
+
+
+.center_content {
+    text-align: center;
+    margin-left: 320px; 
+    margin-top: 50px;
+}
+
+
+
+
+
+.center_content button {
+    background-color: rgb(17, 39, 58);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+}
+
+
+
+
+.profile_picture {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    border: 5px solid  rgb(17, 39, 58);
+}
+
+
+
+
+
+#weather-widget {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 2px solid  rgb(17, 39, 58);
+    padding: 10px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 250px;
+    max-height: 200px;
+    margin:  auto;
+}
+
+
+
+
+
+.charts_section{
+display: flex;
+justify-content: space-around; 
+margin-top: 50px; 
+flex-wrap: wrap; 
+border: 1px ;
+
+width: 930px;
+}
+
+
+
+
+#chatbox-container{
+background-color: rgb(0, 1, 2);
+border: 2px solid  rgb(17, 39, 58);
+padding: 10px;
+border-radius: 10px;
+margin-top: 120px;
+margin-left: 100px;
+justify-items: center;
+width: 350px;
+max-height: 350px;
+height: auto; 
+overflow-y: auto;
+
+
+}
+
+
+
+
+
+.computer-answer {
+    border: 1px solid rgb(255, 255, 255); 
+    border-radius: 3px;
+    padding: 5px; 
+    margin: 5px 0; 
+    background-color: rgb(105, 154, 232); 
+   text-align: start;
+}
+
+
+
+
+
+.My_question{
+    text-align: start;
+}
+
+
+
+
+#Sendbutton{
+cursor: pointer;
+margin-top: 10px;
+
+}
+
+#removebutton{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid  rgb(17, 39, 58);
+   margin-top: 130px;
+   justify-items: center;
+    position: relative;
+
+}
+
+
+
+
+#chatbox-container input[type="text"] {
+        width: calc(100% - 20px);
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+
+
+
+
+
+#for_forcast_chatbox_container {
+display: flex;
+justify-content: space-between; 
+margin-top: 20px; 
+width: 100%; 
+
+}
+
+
+
+#spinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 1100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+
+
+.loader {
+    border: 4px solid rgba(254, 254, 255, 0.929);
+    border-top: 4px solid #141212;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
