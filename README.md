@@ -6,7 +6,7 @@
  This is a weather dashboard that provides current weather information and a 5-day forecast for any city entered by the user.
 
 ## Interface of the project / Demo
-You can view the live demo of the project [here](https://kashan-code.github.io/Weather_Dashboard).
+You can view the live demo of the project [here](https://github.com/kashan-code/Simple-Weather-Dashboard.git).
 
 
  ## Features
