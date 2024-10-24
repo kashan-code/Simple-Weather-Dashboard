@@ -45,14 +45,14 @@ The chatbox will only answer you weather related queries
      different weather conditions like rain,clear sky etc
 
 3-  Demo for CHATBOX
-   ... weather highest?
-   this will print highest temperature
+   Q1. weather highest?
+   ... this will print highest temperature
 
-    ... weather lowest?
-   this will print lowest temperature
+    Q2. weather lowest?
+   ... this will print lowest temperature
     
-     ... filter asort
-     this will print temperatures in ascending 
+     Q3. filter asort
+     ... this will print temperatures in ascending 
 
 
      ... filter dsort
